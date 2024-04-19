@@ -1,0 +1,1 @@
+const Shapes = require('../index.js');
