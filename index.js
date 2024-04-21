@@ -1,7 +1,7 @@
 //global variables calling inquirer, file system, and the code to generate SVG information
 const inquirer = require("inquirer");
 const fs = require('fs');
-const generateSVG = require('./lib/shapes.js');
+const { generateSVG } = require('./lib/shapes.js');
 
  //Creating a function to write the SVG file
 function writeToSVG(fileName, data) {
@@ -10,7 +10,7 @@ function writeToSVG(fileName, data) {
     })
     }
     
-// Create a function to initialize app
+// Create a function to initialize the inquirer
 function init() {
       //the Q&A for building the logo
     inquirer
@@ -40,8 +40,8 @@ function init() {
             },
         ]).then((inquirerResponses) => {
             writeToSVG("./examples/logo.svg", generateSVG({...inquirerResponses}))
-        })
-    }
+    })
+}
     
 // Function call to initialize app
 init();
