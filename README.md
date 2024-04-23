@@ -10,15 +10,15 @@ The link works in node js, and it requires an npm installation of inquirer@8.2.4
 
 ## Usage
 
-When you open the index.js file in your terminal, run node index.js and the first prompt will appear. Fill out all of the prompts as they appear, and your svg will render in the example folder. (fyi the example.svg is the example from the video capture: https://drive.google.com/file/d/17LZ2Tm7pflSVw73dOVeFxNcGP-IGI5Kv/view)
+When you open the index.js file in your terminal, run node index.js and the first prompt will appear. Fill out all of the prompts as they appear, and your svg will render in the example folder. (fyi the example.svg is the example from the video capture, which also will feature the test run: https://drive.google.com/file/d/1dbre_-LwMyqrhbzLNWC5D_UJLDfOHCK9/view)
 
 ```md
-![generated README](images/Screenshot 2024-04-17 at 8.56.23 PM.png)
+![generated SVG](graphic-designer-lite/examples/logo.svg)
 ```
 
 ## Credits
 
-A special shoutout to W3 schools, they have a nifty little window I could test out svgs with text in real time without having to endlessly run the command prompt in node. https://www.w3schools.com/graphics/tryit.asp?filename=trysvg_circle1 And of course, Drew's speedrun helped double check my work, fleshing out my classes and adding validation for text input
+A special shoutout to W3 schools, they have a nifty little window I could test out svgs with text in real time without having to endlessly run the command prompt in node. https://www.w3schools.com/graphics/tryit.asp?filename=trysvg_circle1 And of course, Drew's speedrun helped double check my work, fleshing out my classes and adding validation for text input. https://zoom.us/rec/share/fUqfDf-UXztni9CiZIjDj2hZsJaJMm-s3K4hLOa0aQfnIFznWnGs-VH84y8X2wF_.I3iUgzRrFVCTXUpN
 
 ## License
 
@@ -29,6 +29,10 @@ The standard MIT license was used for this module.
 ## Tests
 
 If you'd like to run the test javascript, input 'npm run test' in your node, and you should see 1 test suite passing as well as three individual tests. Screenshot to follow:
+
+```md
+![generated SVG](graphic-designer-lite/lib/images/Screenshot 2024-04-22 at 6.53.27 PM.png)
+```
 
 ## Questions
 
