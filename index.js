@@ -19,12 +19,14 @@ function init() {
                 type: "input",
                 message: "Give three characters for your logo.",
                 name: "text",
+                validate: (text) => {
+                    return text.length <= 3 || "You exceeded three characters! Try again."
+                }
             },
             {
-                type: "list",
+                type: "input",
                 message: "What color do you want to use for the text?",
                 name: "textColor",
-                choices: ["black", "white", "red", "blue", "green", "yellow"],
             },
             {
                 type: "list",
@@ -33,14 +35,21 @@ function init() {
                 choices: ["circle", "triangle", "square"],
             },
             {
-                type: "list",
+                type: "input",
                 message: "What color do you want to use for the shape?",
                 name: "shapeColor",
-                choices: ["red", "blue", "green", "yellow", "cyan", "magenta"],
             },
         ]).then((inquirerResponses) => {
-            writeToSVG("./examples/logo.svg", generateSVG({...inquirerResponses}))
-    })
+
+            const { text, textColor, shape, shapeColor } = inquirerResponses;
+            
+            // Generate SVG string
+            const svgData = generateSVG(inquirerResponses);
+
+            // Write SVG data to file
+            writeToSVG("./examples/logo.svg", svgData);
+        });
+    
 }
     
 // Function call to initialize app
